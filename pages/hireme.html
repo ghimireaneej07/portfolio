@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me - Aneej Ghimire</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="bi bi-code-slash"></i> Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Back to Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card p-4">
+                    <h2 class="text-center mb-4">Hire Me</h2>
+                    <form id="hireForm" class="hire-form">
+                        <div class="mb-3">
+                            <label for="company" class="form-label">Company/Organization</label>
+                            <input type="text" class="form-control" id="company" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">Position</label>
+                            <input type="text" class="form-control" id="position" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jobType" class="form-label">Job Type</label>
+                            <select class="form-control" id="jobType" required>
+                                <option value="">Select Job Type</option>
+                                <option value="fulltime">Full-time</option>
+                                <option value="parttime">Part-time</option>
+                                <option value="contract">Contract</option>
+                                <option value="internship">Internship</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="budget" class="form-label">Budget Range (USD)</label>
+                            <select class="form-control" id="budget" required>
+                                <option value="">Select Budget Range</option>
+                                <option value="range1">$500 - $1000</option>
+                                <option value="range2">$1000 - $2000</option>
+                                <option value="range3">$2000 - $5000</option>
+                                <option value="range4">$5000+</option>
+                                <option value="negotiate">To be negotiated</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="startDate" class="form-label">Expected Start Date</label>
+                            <input type="date" class="form-control" id="startDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="projectDetails" class="form-label">Project Details/Job Description</label>
+                            <textarea class="form-control" id="projectDetails" rows="5" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Contact Email</label>
+                            <input type="email" class="form-control" id="contactEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactPhone" class="form-label">Contact Phone (optional)</label>
+                            <input type="tel" class="form-control" id="contactPhone">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="terms" required>
+                            <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                        </div>
+                        <button type="submit" class="c-btn w-100 py-3 rounded-pill">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('hireForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Add your form submission logic here
+            alert('Thank you for your interest! I will review your application and get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html> 
