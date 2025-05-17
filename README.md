@@ -1,5 +1,7 @@
 # Personal Portfolio - Aneej Ghimire
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/aneej-portfolio/deploys)
+
 A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience.
 
 ## 🚀 Features
