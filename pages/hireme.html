@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
-    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top">
+    <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top shadow-sm bg-white">
         <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <i class="bi bi-code-slash"></i> Portfolio
@@ -30,63 +30,76 @@
         </div>
     </nav>
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card p-4">
-                    <h2 class="text-center mb-4">Hire Me</h2>
-                
-                    <form id="hireForm" class="hire-form" action="https://formsubmit.co/jaiaakashr846@gmail.com" method="POST">
-                        <div class="mb-3">
-                            <label for="company" class="form-label">Company/Organization</label>
-                            <input type="text" class="form-control" id="company" required>
+    <div class="container my-5 py-3">
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-lg-9">
+                <div class="card p-4 p-md-5 hire-form">
+                    <div class="text-center text-lg-start mb-4">
+                        <h2 class="mb-2">Hire Me</h2>
+                        <p class="text-muted mb-0">Send the job details to aneejghimire@gmail.com and I’ll review it directly.</p>
+                    </div>
+
+                    <form id="hireForm" class="hire-form" name="hire-me" method="POST" action="thank-you.html" data-netlify="true" data-netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="hire-me">
+                        <p class="d-none">
+                            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="company" class="form-label">Company/Organization</label>
+                                <input type="text" class="form-control" id="company" name="company" placeholder="Your company name" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="position" class="form-label">Position</label>
+                                <input type="text" class="form-control" id="position" name="position" placeholder="Role or title" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="jobType" class="form-label">Job Type</label>
+                                <select class="form-control" id="jobType" name="jobType" required>
+                                    <option value="">Select Job Type</option>
+                                    <option value="full-time">Full-time</option>
+                                    <option value="part-time">Part-time</option>
+                                    <option value="contract">Contract</option>
+                                    <option value="internship">Internship</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="budget" class="form-label">Budget Range (USD)</label>
+                                <select class="form-control" id="budget" name="budget" required>
+                                    <option value="">Select Budget Range</option>
+                                    <option value="$500 - $1000">$500 - $1000</option>
+                                    <option value="$1000 - $2000">$1000 - $2000</option>
+                                    <option value="$2000 - $5000">$2000 - $5000</option>
+                                    <option value="$5000+">$5000+</option>
+                                    <option value="To be negotiated">To be negotiated</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="startDate" class="form-label">Expected Start Date</label>
+                                <input type="date" class="form-control" id="startDate" name="startDate" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="contactEmail" class="form-label">Contact Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="email" placeholder="name@company.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="projectDetails" class="form-label">Project Details/Job Description</label>
+                                <textarea class="form-control" id="projectDetails" name="projectDetails" rows="5" placeholder="Describe the work, timeline, and expectations" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="contactPhone" class="form-label">Contact Phone <span class="text-muted">(optional)</span></label>
+                                <input type="tel" class="form-control" id="contactPhone" name="contactPhone" placeholder="Optional phone number">
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="terms" name="terms" value="agreed" required>
+                                    <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="c-btn w-100 py-3 rounded-pill">Submit Application</button>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="position" class="form-label">Position</label>
-                            <input type="text" class="form-control" id="position" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="jobType" class="form-label">Job Type</label>
-                            <select class="form-control" id="jobType" required>
-                                <option value="">Select Job Type</option>
-                                <option value="fulltime">Full-time</option>
-                                <option value="parttime">Part-time</option>
-                                <option value="contract">Contract</option>
-                                <option value="internship">Internship</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="budget" class="form-label">Budget Range (USD)</label>
-                            <select class="form-control" id="budget" required>
-                                <option value="">Select Budget Range</option>
-                                <option value="range1">$500 - $1000</option>
-                                <option value="range2">$1000 - $2000</option>
-                                <option value="range3">$2000 - $5000</option>
-                                <option value="range4">$5000+</option>
-                                <option value="negotiate">To be negotiated</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="startDate" class="form-label">Expected Start Date</label>
-                            <input type="date" class="form-control" id="startDate" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="projectDetails" class="form-label">Project Details/Job Description</label>
-                            <textarea class="form-control" id="projectDetails" rows="5" required></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactEmail" class="form-label">Contact Email</label>
-                            <input type="email" class="form-control" id="contactEmail" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="contactPhone" class="form-label">Contact Phone (optional)</label>
-                            <input type="tel" class="form-control" id="contactPhone">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="terms" required>
-                            <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
-                        </div>
-                        <button type="submit" class="c-btn w-100 py-3 rounded-pill">Submit Application</button>
                     </form>
                 </div>
             </div>
@@ -95,13 +108,5 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById('hireForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            alert('Thank you for your interest! I will review your application and get back to you soon.');
-            this.reset();
-        });
-    </script>
 </body>
 </html> 
