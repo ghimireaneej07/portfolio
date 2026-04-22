@@ -88,6 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Aneej Ghimire - [aneeghimire@email.com](mailto:aneeghimire@email.com)
+Aneej Ghimire - [aneejghimire@gmail.com](mailto:aneejghimire@gmail.com)
 
 Project Link: [https://github.com/ghimireaneej07/portfolio](https://github.com/ghimireaneej07/portfolio) 

@@ -30,7 +30,12 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
+    overflow-x: hidden;
   transition: var(--transition);
+}
+
+.section-block {
+        padding: 5rem 0;
 }
 
 /* Modern Navbar */
@@ -86,11 +91,15 @@ body {
   background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
   border: none;
   color: white;
+    display: inline-block;
   font-weight: 600;
+    text-decoration: none;
   transition: var(--transition);
 }
 
 .c-btn:hover {
+    color: white;
+    text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -446,6 +455,177 @@ h1, h2, h3, h4, h5, h6 {
 
 .action-btn:hover .btn-content {
     color: white;
+}
+
+.home {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    line-height: 1.2;
+}
+
+.skill .row {
+    row-gap: 2rem;
+}
+
+.skill-detail {
+    display: flex;
+    align-items: center;
+}
+
+.skill-detail-content {
+    max-width: 480px;
+}
+
+.skill-highlights li {
+    margin-bottom: 0.6rem;
+    line-height: 1.45;
+}
+
+.skill-highlights i {
+    color: var(--primary-color);
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 190px;
+    text-align: center;
+}
+
+.hero-profile {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 8px solid #ffffff;
+    box-shadow: 0 20px 45px rgba(63, 57, 109, 0.2);
+}
+
+.portfolio .project-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio .project-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .card-body {
+    min-height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1.25rem;
+}
+
+.portfolio .card-title {
+    font-size: 1.1rem;
+    line-height: 1.35;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .card-description {
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+.portfolio .link {
+    margin-top: auto;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.portfolio .link:hover {
+    text-decoration: underline;
+}
+
+.portfolio .heading {
+    margin-bottom: 0.75rem;
+}
+
+.contact.section-block {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.contact .heading {
+    margin-bottom: 0.75rem;
+}
+
+.contact-item a,
+.contact-details a {
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+.contact-item a:hover,
+.contact-details a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-grid {
+    margin-top: 1.25rem;
+}
+
+.quick-contact-form {
+    background-color: var(--card-bg);
+    padding: 1.25rem;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    height: 100%;
+}
+
+.quick-contact-form .form-control {
+    background-color: var(--bg-primary);
+}
+
+.footer-social-links {
+    justify-content: center;
+    gap: 0.85rem;
+    flex-wrap: wrap;
+}
+
+.footer-social-links a {
+    width: 44px;
+    height: 44px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .section-block {
+        padding: 3.5rem 0;
+    }
+
+    .skill-detail {
+        align-items: flex-start;
+    }
+
+    .skill-detail-content {
+        max-width: 100%;
+    }
+
+    .resume-btn {
+        width: 100%;
+    }
+
+    .contact.section-block {
+        padding-top: 3rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .quick-contact-form {
+        padding: 1rem;
+    }
 }
 
 /* Enhanced Form Styles */
