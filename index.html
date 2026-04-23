@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Aneej Ghimire portfolio showcasing web development, Python automation, AI integration, and full-stack projects." />
-  <meta name="keywords" content="Aneej Ghimire, portfolio, web developer, Python, AI integration, full stack, Nepal" />
+  <meta name="description" content="Aneej Ghimire is a MERN stack developer and IT student building responsive websites, web apps, and project solutions in Nepal and beyond." />
+  <meta name="keywords" content="Aneej Ghimire, Aneej Ghimire portfolio, MERN stack developer, web developer, React, Node.js, Nepal" />
   <meta name="author" content="Aneej Ghimire" />
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Personal Portfolio - Aneej Ghimire" />
-  <meta property="og:description" content="Explore projects, skills, and services by Aneej Ghimire in web, Python, and AI development." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://aneejghimire.netlify.app/" />
+  <meta property="og:title" content="Aneej Ghimire | MERN Stack Developer Portfolio" />
+  <meta property="og:description" content="Explore the portfolio, skills, services, and projects of Aneej Ghimire, a responsive web and MERN stack developer." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="images/profile.png" />
-    <title>Personal Portfolio - Aneej Ghimire</title>
+  <meta property="og:url" content="https://aneejghimire.netlify.app/" />
+  <meta property="og:image" content="https://aneejghimire.netlify.app/images/profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aneej Ghimire | MERN Stack Developer Portfolio" />
+  <meta name="twitter:description" content="Responsive portfolio site for Aneej Ghimire with projects, services, skills, and contact options." />
+  <meta name="twitter:image" content="https://aneejghimire.netlify.app/images/profile.png" />
+  <meta name="theme-color" content="#4a90e2" />
+    <title>Aneej Ghimire | MERN Stack Developer Portfolio</title>
     <!-- bootstrap css cdn link  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -39,6 +46,39 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://aneejghimire.netlify.app/#website",
+            "url": "https://aneejghimire.netlify.app/",
+            "name": "Aneej Ghimire | MERN Stack Developer Portfolio",
+            "description": "Aneej Ghimire is a MERN stack developer and IT student building responsive websites, web apps, and project solutions.",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://aneejghimire.netlify.app/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://aneejghimire.netlify.app/#person",
+            "name": "Aneej Ghimire",
+            "url": "https://aneejghimire.netlify.app/",
+            "image": "https://aneejghimire.netlify.app/images/profile.png",
+            "jobTitle": "MERN Stack Developer",
+            "description": "Aneej Ghimire is a MERN stack developer and IT student building responsive websites, web apps, and project solutions.",
+            "sameAs": [
+              "https://www.linkedin.com/in/aneej-ghimire-86316224a/",
+              "https://github.com/ghimireaneej07",
+              "https://www.instagram.com/ghimire_aneej/"
+            ]
+          }
+        ]
+        }
+    </script>
 </head>
 <body>
     <!-- navbar starts -->
@@ -47,14 +87,17 @@
       class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
     >
       <div class="container-fluid px-5">
-        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+        <a class="navbar-brand fw-bold fs-2" href="#home" style="color: #3f396d">Aneej Ghimire</a>
         <button
           class="nav-menu d-md-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <i class="bi bi-menu-button-fill"></i>
+          <i class="bi bi-list"></i>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -83,12 +126,16 @@
     <section class="home pt-5 pb-5" id="home">
       <div class="container px-4 px-lg-5">
       <div class="row justify-content-evenly align-items-center g-4">
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
+        <div class="col-10 col-md-5 order-1 order-md-2 text-center" data-aos="slide-left">
+          <img src="images/profile.png" class="img-fluid rounded-circle hero-profile" alt="Portrait of Aneej Ghimire, MERN stack developer" loading="eager" decoding="async" fetchpriority="high" />
+        </div>
+        <div class="col-10 col-md-6 order-2 order-md-1 text-center text-md-start" data-aos="slide-right">
+          <small class="d-inline-block text-uppercase fw-bold text-primary mb-2">Portfolio</small>
+          <h1 style="color: #3f396d">
             Hello! I Am <br /><span class="c-orange">Aneej Ghimire</span>
-          </h2>
+          </h1>
           <p class="text-muted mt-3">
-            I am a 3rd year IT student actively seeking internship opportunities. I specialize in web development, Python programming, debugging, AI command integration, and real-time application development. With a strong interest in building practical solutions, I continuously work on personal and open-source projects to expand my technical skill set.
+            I’m a Software Engineering student with hands-on experience in MERN and Django, focused on building scalable web applications and RESTful APIs. I enjoy authentication flows, role-based access, database design, debugging, and performance optimization.
           </p>
           <div class="action-buttons mt-4 d-flex gap-3 justify-content-center justify-content-md-start">
             <a href="pages/hireme.html" class="action-btn hire-btn">
@@ -106,9 +153,6 @@
               <span class="btn-glow"></span>
             </a>
           </div>
-        </div>
-        <div class="col-10 col-md-5 d-none d-md-block text-center" data-aos="slide-left">
-          <img src="images/profile.png" class="img-fluid rounded-circle hero-profile" alt="Aneej Ghimire" />
         </div>
       </div>
       </div>
@@ -317,15 +361,15 @@
         </div>
         <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
           <div class="heading mt-5 mt-md-3 skill-detail-content">
-            <small>My Skills</small>
-            <h3>Beautiful & Unique Digital Experiences</h3>
+            <small>About Me</small>
+            <h3>Software Engineering Student & Web Developer</h3>
             <p class="text-muted">
-              I continuously work on personal and open-source projects to expand my technical skill set.
+              I build responsive web applications with MERN and Django, and I like solving real problems with clean REST APIs, secure authentication, and maintainable backend architecture.
             </p>
             <ul class="skill-highlights list-unstyled text-muted mb-4">
-              <li><i class="bi bi-check-circle-fill me-2"></i>Internship-ready project delivery with practical outcomes</li>
-              <li><i class="bi bi-check-circle-fill me-2"></i>Strong debugging and API integration workflow</li>
-              <li><i class="bi bi-check-circle-fill me-2"></i>Clear communication and collaborative development mindset</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Hands-on experience in MERN and Django development</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Built production-style systems with JWT and role-based access</li>
+              <li><i class="bi bi-check-circle-fill me-2"></i>Focused on backend architecture, debugging, and performance</li>
             </ul>
             <a href="resume1.pdf" download="resume1.pdf" class="c-btn h-btn mt-2 py-3 px-5 rounded-pill resume-btn" aria-label="Download Aneej Ghimire resume PDF">Download CV</a>
           </div>
@@ -338,13 +382,13 @@
       <div class="container px-4 px-lg-5">
       <div class="heading text-center pt-2">
         <small>Creative Work</small>
-        <h3 class="mb-2">Check My Portfolio</h3>
+        <h2 class="mb-2">Check My Portfolio</h2>
       </div>
       <div class="portfolio-body mt-4">
         <div class="row justify-content-center g-4">
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/scrapay_project.png" class="card-img-top" alt="SCRAPAY project" loading="lazy" />
+              <img src="images/scrapay_project.png" class="card-img-top" alt="SCRAPAY digital scrap collection and vendor management project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">SCRAPAY-A DIGITAL PLATFORM FOR SCRAP COLLECTION AND VENDOR MANAGEMENT</h4>
                 <p class="text-muted card-description">A smart platform that streamlines scrap pickup operations, vendor coordination, and collection tracking.</p>
@@ -354,7 +398,7 @@
           </div>
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/tapai_ko_sathi.png" class="card-img-top" alt="Tapai Ko Sathi Ecommerce" loading="lazy" />
+              <img src="images/tapai_ko_sathi.png" class="card-img-top" alt="Tapai Ko Sathi ecommerce project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">FULLSTACK_ECOMMERCE_SITE</h4>
                 <p class="text-muted card-description">A full-stack ecommerce solution focused on Ayurvedic medicine purchase and natural herbs delivery.</p>
@@ -364,7 +408,7 @@
           </div>
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/chatbot.webp" class="card-img-top" alt="Chatbot App" loading="lazy" />
+              <img src="images/chatbot.webp" class="card-img-top" alt="Chatbot application project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">Chatbot App</h4>
                 <p class="text-muted card-description">A real-time chatbot web application built with Flask and intelligent response flows.</p>
@@ -374,7 +418,7 @@
           </div>
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/tictactoe.jpeg" class="card-img-top" alt="Tic Tac Toe Game" loading="lazy" />
+              <img src="images/tictactoe.jpeg" class="card-img-top" alt="Tic Tac Toe game project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">Tic Tac Toe Game</h4>
                 <p class="text-muted card-description">A responsive Tic Tac Toe game implemented in JavaScript with smooth gameplay logic.</p>
@@ -384,7 +428,7 @@
           </div>
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/python.png" class="card-img-top" alt="Python Automation" loading="lazy" />
+              <img src="images/python.png" class="card-img-top" alt="Python automation project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">Python Automation</h4>
                 <p class="text-muted card-description">Automation scripts and API integrations built with Python for practical workflows.</p>
@@ -394,7 +438,7 @@
           </div>
           <div class="post col-12 col-md-6 col-xl-4 all" data-aos="fade-up">
             <div class="card project-card">
-              <img src="images/webdev.jpg" class="card-img-top" alt="Web Development" loading="lazy" />
+              <img src="images/webdev.jpg" class="card-img-top" alt="Responsive web development project screenshot" loading="lazy" decoding="async" />
               <div class="card-body">
                 <h4 class="card-title">Responsive Web UI</h4>
                 <p class="text-muted card-description">Modern responsive web interfaces with clean UX patterns and performance-first design.</p>
@@ -411,7 +455,7 @@
     <section class="testimonial section-block" id="testimonial">
       <div class="row justify-content-evenly">
         <div class="col-md-4 col-10" data-aos="slide-right">
-          <img src="images/webdev.jpg" class="img-fluid rounded-4" alt="Web development showcase" />
+          <img src="images/webdev.jpg" class="img-fluid rounded-4 testimonial-image" alt="Web development showcase" loading="lazy" decoding="async" />
         </div>
         <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
           <div class="heading">
