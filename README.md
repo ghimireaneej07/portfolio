@@ -1,93 +1,161 @@
-# Personal Portfolio - Aneej Ghimire
+# Aneej Ghimire Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-site-id/deploy-status)](https://app.netlify.com/sites/aneej-portfolio/deploys)
+A responsive personal portfolio for Aneej Ghimire, a Software Engineering student and full-stack developer focused on MERN, Django, REST APIs, and production-ready web applications.
 
-A modern, responsive personal portfolio website showcasing my skills, projects, and professional experience.
+## Features
 
-## 🚀 Features
+- Clean recruiter-focused homepage
+- Responsive layout for mobile, tablet, and desktop
+- Light and dark mode with saved user preference
+- Resume-aligned experience, education, skills, projects, and certifications
+- Semantic HTML for accessibility and SEO
+- Lightweight CSS and JavaScript without unnecessary homepage libraries
+- Netlify-ready contact form
+- Optimized image loading with lazy loading and explicit dimensions
 
-- Modern UI/UX design with smooth animations
-- Responsive layout for all devices
-- Dark/Light mode support
-- Interactive project showcase
-- Skill progress visualization
-- Contact and Hire Me forms
-- Modern button effects and transitions
-- SEO optimized
-
-## 🛠️ Technologies Used
+## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
-- AOS Library (Animate on Scroll)
 - Bootstrap Icons
-- jQuery
+- Google Fonts: Josefin Sans
+- Netlify for deployment
 
-## 📂 Project Structure
+## Folder Structure
 
-```
+```text
 portfolio/
-│
-├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── pages/
-│   ├── contact.html
-│   └── hireme.html
-└── images/
-    └── ...
+|-- index.html
+|-- script.js
+|-- css/
+|   |-- style.css
+|-- images/
+|   |-- profile.png
+|   |-- scrapay_project.png
+|   |-- webdev.jpg
+|   |-- ...
+|-- pages/
+|   |-- thank-you.html
+|-- resume1.pdf
+|-- robots.txt
+|-- sitemap.xml
+|-- netlify.toml
+|-- README.md
 ```
 
-## 🔧 Setup & Installation
+The repository root also contains a small redirect `index.html` that forwards visitors to `portfolio/index.html`.
+
+## Setup Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/ghimireaneej07/portfolio.git
-   ```
 
-2. Navigate to the project directory:
-   ```bash
-   cd portfolio
-   ```
+```bash
+git clone https://github.com/ghimireaneej07/portfolio.git
+```
 
-3. Open `index.html` in your browser or use a local server.
+2. Move into the project:
 
-## 🌟 Key Sections
+```bash
+cd portfolio
+```
 
-- **Home**: Introduction and call-to-action buttons
-- **Services**: Showcase of expertise and services
-- **About**: Professional background and skills
-- **Portfolio**: Featured projects with descriptions
-- **Contact**: Contact form and professional information
+3. Open the site locally:
 
-## 💻 Development
+```bash
+cd portfolio
+python -m http.server 5500
+```
 
-To contribute to this project:
+4. Visit:
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```text
+http://localhost:5500
+```
 
-## 📱 Responsive Design
+## Deployment
 
-The portfolio is fully responsive and tested on:
-- Mobile devices (320px and up)
-- Tablets (768px and up)
-- Desktops (1024px and up)
-- Large screens (1440px and up)
+This project is configured for Netlify.
 
-## 📄 License
+1. Push changes to the existing GitHub repository.
+2. In Netlify, connect the repository if it is not already connected.
+3. Use these settings:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```text
+Base directory: portfolio
+Publish directory: .
+Build command: leave empty
+```
 
-## 📞 Contact
+4. Deploy and verify:
 
-Aneej Ghimire - [aneejghimire@gmail.com](mailto:aneejghimire@gmail.com)
+- Homepage loads correctly
+- Contact form appears in Netlify Forms
+- Netlify form notifications are enabled for your email in the Netlify dashboard
+- Mobile navigation works
+- Dark mode persists after refresh
+- `robots.txt` and `sitemap.xml` are accessible
 
-Project Link: [https://github.com/ghimireaneej07/portfolio](https://github.com/ghimireaneej07/portfolio) 
+## Screenshots
+
+Add screenshots after deployment:
+
+```text
+docs/screenshots/home-desktop.png
+docs/screenshots/home-mobile.png
+docs/screenshots/projects.png
+```
+
+## Git Workflow
+
+Use the existing repository. Do not run `git init` again.
+
+1. Check the current changes:
+
+```bash
+git status
+```
+
+2. Review the diff:
+
+```bash
+git diff
+```
+
+3. Stage only the intended files:
+
+```bash
+git add -A portfolio
+```
+
+4. Commit with a clear message:
+
+```bash
+git commit -m "Refine portfolio layout and content"
+```
+
+5. Push to the current branch:
+
+```bash
+git push origin main
+```
+
+If your branch is not `main`, check it with:
+
+```bash
+git branch --show-current
+```
+
+Then push using that branch name:
+
+```bash
+git push origin your-branch-name
+```
+
+## Maintenance Notes
+
+- Keep resume details and portfolio content in sync.
+- Compress new project screenshots before committing.
+- Use descriptive alt text for every meaningful image.
+- Keep JavaScript small and focused on interactions that need it.
+- Avoid adding libraries unless they solve a real problem.
